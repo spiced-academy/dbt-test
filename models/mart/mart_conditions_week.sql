@@ -17,7 +17,7 @@ filtering_features AS (
             ,max_temp_c
             ,min_temp_c
             ,avg_temp_c
-            ,total_precip_mm
+            ,totalprecip_mm
             ,total_snow_cm
             ,avg_humidity
             ,daily_will_it_rain
@@ -55,7 +55,7 @@ aggregations_adding_features AS (
             ,MAX(max_temp_c) AS max_temp_c
             ,MIN(min_temp_c) AS min_temp_c
             ,AVG(avg_temp_c) AS avg_temp_c
-            ,SUM(total_precip_mm) AS total_precip_mm
+            ,SUM(totalprecip_mm) AS total_precip_mm
             ,SUM(total_snow_cm) AS total_snow_cm
             ,AVG(avg_humidity) AS avg_humidity
             ,SUM(daily_will_it_rain) AS will_it_rain_days
